@@ -14,13 +14,13 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/pili-engineering/PLPlayerKit"
   s.license          = 'Apache License, Version 2.0'
   s.author           = { "pili" => "pili-coresdk@qiniu.com" }
-  s.source           = { :http => "https://sdk-release.qnsdk.com/PLPlayerKit-iphoneos-v3.4.3.zip" }
+  s.source           = { :http => "https://sdk-release.qnsdk.com/PLPlayerKit-universal-v3.4.3.zip" }
 
   s.platform     = :ios, '8.0'
   s.requires_arc = true
 
-  s.subspec "iphoneos" do |ss1|
-    ss1.vendored_framework = "Pod/Library/PLPlayerKit.framework"
+  s.subspec "universal" do |ss1|
+    ss1.vendored_framework = "Pod/Library-Universal/PLPlayerKit.framework"
   end
 
   s.frameworks = ["UIKit", "Foundation", "MediaPlayer", "CoreAudio", "AudioToolbox", "Accelerate", "QuartzCore", "OpenGLES", "AVFoundation","CoreVideo","AVKit","CoreMedia","VideoToolbox","CoreTelephony"]
